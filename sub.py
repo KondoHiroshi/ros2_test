@@ -8,7 +8,7 @@ class MinimalSubscriber(object):
 
     def __init__(self):
         self.node = rclpy.create_node('minimal_subscriber')
-        self.node create_subscription(String,'topic',self.callback,10) #??
+        self.node.create_subscription(String,'topic',self.callback,10) #??
         self.subscription  # prevent unused variable warning
 
     def callback(self, msg):
